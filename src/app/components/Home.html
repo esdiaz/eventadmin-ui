@@ -1,0 +1,98 @@
+<div class="page-title">
+  <h3>Configuración de evento </h3>
+</div>
+<hr/>
+
+<form>
+  <div class="row">
+    <div class="col-md-12">
+      <!-- Header panel -->
+      <div class="portlet box bluef">
+        <div class="portlet-title">
+          <div class="caption caption-md">
+            Datos generales
+          </div>
+        </div>
+        <!-- Body panel-->
+        <div class="portlet-body col-md-12" style="border:1px solid #e6e6e6!important">
+          <div class="col-md-5">
+            <div class="form-group form-md-line-input has-success form-md-floating-label">
+              <input type="text" class="form-control edited" id="input_task_name" ng-model="vm.task.name">
+              <label for="input_task_name">Nombre del evento</label>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="form-group form-md-line-input has-success form-md-floating-label">
+              <input type="text" class="form-control edited" id="input_task_endpoint" ng-model="vm.task.endpoint">
+              <label for="input_task_endpoint">Endpoint</label>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <p>Tipo de servicio</p>
+              <ui-select ng-model="vm.serviceType" theme="select2" ng-disabled="ctrl.disabled" style="width: 100%;" title="">
+                <ui-select-match placeholder="">{{$select.selected.name}}</ui-select-match>
+                  <ui-select-choices repeat="serviceType in vm.serviceTypes | propsFilter: {name: $select.search}" position='down'>
+                    <div ng-bind-html="serviceType.name | highlight: $select.search"></div>
+                  </ui-select-choices>
+              </ui-select>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <p>Tipo de petición</p>
+              <ui-select ng-model="vm.requestType" theme="select2" ng-disabled="ctrl.disabled" style="width: 100%;" title="">
+                <ui-select-match placeholder="">{{$select.selected.name}}</ui-select-match>
+                  <ui-select-choices repeat="requestType in vm.resquestTypes | propsFilter: {name: $select.search}" position='down'>
+                    <div ng-bind-html="requestType.name | highlight: $select.search"></div>
+                  </ui-select-choices>
+              </ui-select>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <p>Frecuencia</p>
+              <ui-select ng-model="vm.frecuencyType" theme="select2" ng-disabled="ctrl.disabled" style="width: 100%;" title="">
+                <ui-select-match placeholder="">{{$select.selected.name}}</ui-select-match>
+                  <ui-select-choices repeat="frecuencyType in vm.frecuencyTypes | propsFilter: {name: $select.search}" position='down'>
+                    <div ng-bind-html="frecuencyType.name | highlight: $select.search"></div>
+                  </ui-select-choices>
+              </ui-select>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <p>Tipo de tarea</p>
+              <ui-select ng-model="vm.taskType" theme="select2" ng-disabled="ctrl.disabled" style="width: 100%;" title="">
+                <ui-select-match placeholder="">{{$select.selected.name}}</ui-select-match>
+                  <ui-select-choices repeat="taskType in vm.taskTypes | propsFilter: {name: $select.search}" position='down'>
+                    <div ng-bind-html="taskType.name | highlight: $select.search"></div>
+                  </ui-select-choices>
+              </ui-select>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="form-group form-md-line-input">
+              <p>Dias</p>
+              <ui-select multiple ng-model="vm.multipleDays.selectedDay" theme="bootstrap" ng-disabled="ctrl.disabled" class="multiple-modal temporal-ancho" sortable="true" close-on-select="false">
+                <ui-select-match placeholder="Seleccione los dias">{{$item.description}}</ui-select-match>
+                  <ui-select-choices ui-selected-choice="day.id == '0'" repeat="day in vm.days | propsFilter: {description: $select.search} |orderBy:'id' track by $index" >
+                    <div ng-bind-html="day.description | highlight: $select.search"></div>
+                </ui-select-choices>
+              </ui-select>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</form>
+</div>

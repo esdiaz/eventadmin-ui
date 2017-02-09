@@ -1,0 +1,17 @@
+<!-- BEGIN CONTAINER -->
+
+  <!-- BEGIN SIDEBAR -->
+  <div class="page-sidebar-wrapper" ng-class="{hidden:mainComponent.gestionContenedorService.ocultarAside}">
+    <div class="page-sidebar navbar-collapse collapse">
+      <aside-component></aside-component>
+    </div>
+  </div>
+  <!-- END SIDEBAR -->
+
+ <!-- BEGIN CONTENT -->
+  <div class="page-content-wrapper">
+    <div class="page-content" ng-class="{'page-content-login':mainComponent.gestionContenedorService.claseMenu}">
+        <div ui-view ng-controller="Login as ctrl" ng-class="{'login-is':ctrl.isVisible == true, 'minimum_hide':mainComponent.gestionContenedorService.minimumHide}"></div>
+    </div>
+  </div>
+  <!-- END CONTENT -->

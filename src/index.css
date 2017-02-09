@@ -1,0 +1,116 @@
+/**START: HELPERS**/
+.page-content-login {
+  margin-left: 0px !important;
+  min-height: inherit !important;
+  padding: 0px !important;
+}
+
+.login-is-bloks {
+  z-index: 0 !important;
+  width: 90% !important;
+}
+
+.select-large {
+  width: 100%;
+}
+
+.blue {
+  color: #4786D0 !important;
+}
+
+.dark_blue {
+  color: blue !important;
+}
+
+.margin_left {
+  margin-left: 50px;
+}
+
+.small_margin_bottom {
+  margin-bottom:30px;
+}
+
+.small_margin_top {
+  margin-top:30px;
+}
+
+.middle_margin_top {
+    margin-top:40px;
+}
+
+.big_margin_top {
+  margin-top: 90px;
+}
+
+.margin_top {
+  margin-top:25px;
+}
+
+.hidden {
+  display: none;
+}
+
+.datos_generales {
+  margin: 15px 0px;
+  font-size: 16px;
+  height: 100px;
+}
+
+  .datos_generales_titulo {
+    margin: 5px 0px;
+  }
+
+  .datos_generales_contenido {
+    margin: 15px 0px;
+    font-weight: bolder;
+  }
+
+  .minimum_hide {
+    height:0px
+  }
+/**END: HELPERS**/
+
+/**START MENU**/
+
+.navigation {
+  width: 300px;
+}
+
+.mainmenu, .submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mainmenu a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.menu_open {
+  display: block !important;
+  max-height: 200px !important;
+}
+
+.submenu a {
+  background-color: #e6e6e6;
+}
+
+.submenu a:hover {
+  background-color: #d9d9d9;
+}
+
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+/**END MENU**/
+
+[class^="fa-"]:not(.fa-stack), [class^="glyphicon-"], [class^="icon-"], [class*=" fa-"]:not(.fa-stack), [class*=" glyphicon-"], [class*=" icon-"] {
+  font-size: 20px;
+}
+
+/*END: CUSTOM CSS*/

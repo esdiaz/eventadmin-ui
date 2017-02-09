@@ -1,0 +1,61 @@
+{
+  "name": "application-administrator",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "1.11.3",
+    "datatables.net": "^1.10.2",
+    "datatables.net-dt": "^1.10.2",
+    "datatables.net-buttons": "~1.2.2",
+    "datatables-buttons": "~1.2.2",
+    "angular-datatables": "~0.5.5",
+    "angular": "^1.5.0",
+    "bootstrap": "^3.2.0",
+    "angular-animate": "^1.5.0",
+    "angular-cookies": "^1.5.0",
+    "angular-resource": "^1.5.0",
+    "angular-route": "^1.5.9",
+    "angular-sanitize": "^1.5.0",
+    "angular-touch": "^1.5.0",
+    "angular-ui-router": "1.0.0-beta.1",
+    "angular-ui-select2": "0.0.5",
+    "angular-ui-select": "0.19.6",
+    "angular-bootstrap": "^2.2.0",
+    "kendo-ui": "2016.3.1118+SP2",
+    "angularPrint": "^0.3.8",
+    "angularjs-datepicker": "^2.1.7",
+    "angular-moment": "^1.0.1",
+    "itastrap": "http://famsagitlab/italoc/itastrap.git#1.3.7",
+    "ngstorage": "^0.3.11",
+    "a0-angular-storage": "^0.0.15",
+    "sweetalert": "^1.1.3"
+  },
+  "comentariosDependencias": {
+    "angular-ui-select2": "14/11/2016 luis elvira, no se quito por que se van los style de los combobox. FIXME"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.5.0"
+  },
+  "appPath": "app",
+  "moduleName": "canalApp",
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "less/bootstrap.less",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  },
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

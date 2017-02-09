@@ -1,0 +1,69 @@
+<div class="page-md hide-overflow">
+    <div class="login-is-bloks">
+      <div class="animated slideInLeft eff1">
+        <div class="first-red"></div>
+      </div>
+      <div class="animated slideInLeft eff2">
+        <div class="second-red"></div>
+      </div>
+      <div class="animated slideInLeft eff3">
+        <div class="first-blue"></div>
+      </div>
+      <div class="animated fadeIn eff4">
+        <div class="second-blue"></div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div class="login-form animated slideInRight">
+            <div class="logo animated fadeInUp"></div>
+            <div class="login-wrapper">
+              <form ng-submit="vm.login(vm.usuario)">
+                <h2>Iniciar Sesión</h2>
+                <div class="form-group form-md-line-input has-success form-md-floating-label">
+                  <div class="input-icon right">
+                    <input type="text" class="form-control" id="input_user" ng-model="vm.usuario.usuario" required="true">
+                    <label for="input_user">Usuario</label>
+                    <i class="fa fa-user"></i>
+                  </div>
+                </div>
+                <div class="form-group form-md-line-input has-success form-md-floating-label">
+                  <div class="input-icon right">
+                    <input type="password" class="form-control" id="input_pass" ng-model="vm.usuario.password" required="true">
+                    <label for="input_pass">Contraseña</label>
+                    <i class="fa fa-lock"></i>
+                  </div>
+                </div>
+                <div class="row login-actions">
+                  <div class="col-md-7">
+                    <div class="md-checkbox save-pass">
+                      <input type="checkbox" id="checkbox-contra" class="md-check">
+                      <label for="checkbox-contra">
+                      <span class="inc"></span>
+                      <span class="check"></span>
+                      <span class="box"></span>
+                      guardar contraseña </label>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <button type="submit" class="btn default pull-right btn-sm">Entrar</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-md-12">
+                    <ul class="list-simple alt">
+                      <li><a href="#">Ayuda & Soporte</a></li>
+                      <li><a href="#">Olvide la contraseña</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

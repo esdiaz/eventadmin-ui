@@ -1,0 +1,31 @@
+<!-- BEGIN SIDEBAR MENU  -->
+    <ul class="page-sidebar-menu page-sidebar-menu-light mainmenu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+      <li>
+        <a href="/home">
+          <i class="fa fa-users"></i>
+          <span class="title">Menu 1</span>
+        </a>
+      </li>
+      <li ng-click="asideController.onSelectMenu()">
+        <a href="">
+          <i class="fa fa-book"></i>
+          <span class="title">Menu 2</span>
+          <span class="fa fa-sort-desc margin_left"></span>
+        </a>
+      </li>
+      <ul class="submenu" ng-class="{menu_open:asideController.openmenu}">
+        <li>
+          <a href="/submenu1">
+            <i class="fa fa-address-book-o"></i>
+            <span class="title">Submenu 1</span>
+          </a>
+        </li>
+        <li>
+          <a href="/submenu2">
+            <i class="fa fa-calendar"></i>
+            <span class="title">Submenu 2</span>
+          </a>
+        </li>
+      </ul>
+    </ul>
+    <!-- END SIDEBAR MENU -->
